@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class ex6 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+
+        System.out.println("informe um valor");
+        int valor = teclado.nextInt();
+
+        System.out.println("O sucessor será: " + (valor+1) + " e o Antecessor será: " + (valor-1));
+
+    }
+}

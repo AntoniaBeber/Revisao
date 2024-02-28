@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class ex3 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+
+        System.out.println("Informe o seu salario");
+        int salario = teclado.nextInt();
+
+        double reajustado = salario+(salario * 0.01);
+        System.out.println(reajustado);
+    }
+
+
+
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class ex5 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        int salarioMinimo = 788;
+        System.out.println("informe o valor do salario do Gabriel");
+        int salarioGabriel = teclado.nextInt();
+
+        System.out.println("o Gabriel ganha " + salarioGabriel/salarioMinimo);
+    }
+
+}

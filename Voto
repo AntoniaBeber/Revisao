@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ex9 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        boolean alfabetizado = true;
+        System.out.println("Informe seu nome");
+        String nome = teclado.nextLine();
+        System.out.println("Informe a sua idade");
+        int idade = teclado.nextInt();
+        System.out.println("Voce é alfabetizado? Sim ou Não");
+        String sim = teclado.next();
+        if (sim.equalsIgnoreCase("sim")){
+            alfabetizado = true;
+        } else if(sim.equalsIgnoreCase("Nao")){
+            alfabetizado = false;
+        }
+
+        if (idade >= 18 && idade <= 70 && alfabetizado){
+            System.out.println("Pessoa é eleitora obrigatorio");
+        } if (idade == 16 || idade == 17 || idade > 70 || !alfabetizado){
+            System.out.println("Pessoa é eleitora opcional");
+        }else if (idade < 16){
+            System.out.println("Pessoa não eleitora");
+        }
+
+    }
+}

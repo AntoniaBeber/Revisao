@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ex1 {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+
+        System.out.println("informe o ano de nascimento: ");
+        int anoDeNascimento = teclado.nextInt();
+        System.out.println("informe o ano Atual: ");
+        int anoAtual = teclado.nextInt();
+        System.out.println("Informe o mes de nascimento:" );
+        int meses = teclado.nextInt();
+        System.out.println("Informe o dia de nascimento");
+        int dias = teclado.nextInt();
+
+        int idade = (anoAtual-anoDeNascimento);
+        int idadeEmDias = (idade*365);
+        int idadeEmMeses = (idade*12);
+
+        System.out.println("sua idade em anos é de: " + idade);
+        System.out.println("sua idade em dias é de: " + idadeEmDias);
+        System.out.println("sua idade em meses é de "+ idadeEmMeses);
+    }
+}
